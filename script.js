@@ -10,5 +10,11 @@ function writePassword() {
 
 }
 
+//create function in order to take the user through the prompts to choose what type of password they want to generate//
+
+function generatePassword() {
+  var input = prompt ("Enter the number of characters you would like your password to be.Must be between 8-128 characters.");
+}
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
