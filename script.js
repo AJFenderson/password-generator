@@ -1,5 +1,11 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+var length = parseInt(input);
+var alpha = confirm("Would you like to include lowercase numbers?");
+    var caps = confirm("Would you like to include capital letters?");
+    var numeric = confirm("Would you like to include numbers?");
+    var special= confirm("Would you like to include special characters?");
+
 
 // Write password to the #password input
 function writePassword() {
@@ -14,6 +20,17 @@ function writePassword() {
 
 function generatePassword() {
   var input = prompt ("Enter the number of characters you would like your password to be.Must be between 8-128 characters.");
+
+  if (input >= 8 && input <= 128) {
+    passwordLength = parseInt(input);
+    
+     confirm("Would you like to include lowercase numbers?");
+     confirm("Would you like to include capital letters?");
+    confirm("Would you like to include numbers?");
+    confirm("Would you like to include special characters?"); 
+    
+   
+  }
 }
 
 // Add event listener to generate button
