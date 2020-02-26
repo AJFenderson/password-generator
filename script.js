@@ -1,12 +1,5 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var length = parseInt(input);
-var alpha = confirm("Would you like to include lowercase numbers?");
-    var caps = confirm("Would you like to include capital letters?");
-    var numeric = confirm("Would you like to include numbers?");
-    var special= confirm("Would you like to include special characters?");
-
-
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -24,13 +17,18 @@ function generatePassword() {
   if (input >= 8 && input <= 128) {
     passwordLength = parseInt(input);
     
-     confirm("Would you like to include lowercase numbers?");
+     confirm("Would you like to include lowercase letters?");
      confirm("Would you like to include capital letters?");
     confirm("Would you like to include numbers?");
     confirm("Would you like to include special characters?"); 
     
-   
+  } 
+  else if (input < 8 || input > 128) {
+    
+    alert ("Does not meet requirement.Please try again");
   }
+
+  return password;
 }
 
 // Add event listener to generate button
